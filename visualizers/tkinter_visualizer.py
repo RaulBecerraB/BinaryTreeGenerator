@@ -1,6 +1,4 @@
 import tkinter as tk
-
-import tkinter as tk
 from interfaces.interfaces import ITreeVisualizer
 
 class TkinterTreeVisualizer(ITreeVisualizer):
@@ -9,10 +7,20 @@ class TkinterTreeVisualizer(ITreeVisualizer):
         """Crea una visualización gráfica del árbol."""
         window = tk.Tk()
         window.title("Árbol Binario de Expresión")
+        
+        # Configuraciones para que la ventana aparezca al frente
+        window.attributes('-topmost', True)  # Mantiene la ventana sobre otras
+        window.update()  # Actualiza la ventana
+        window.focus_force()  # Fuerza el enfoque en esta ventana
+        
         canvas = tk.Canvas(window, width=500, height=400, bg="white")
         canvas.pack()
         
         self._draw_node(canvas, root, 250, 50, 100)
+        
+        # Quita el atributo topmost después de mostrar para permitir interacción normal
+        window.after(1000, lambda: window.attributes('-topmost', False))
+        
         window.mainloop()
     
     def _draw_node(self, canvas, node, x, y, dx):
