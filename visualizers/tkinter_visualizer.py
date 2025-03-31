@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 #Equipo 5
 #Integrantes:
 #Edwin Ulises Diaz Sanchez

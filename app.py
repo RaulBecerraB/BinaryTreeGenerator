@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 #Equipo 5
 #Integrantes:
 #Edwin Ulises Diaz Sanchez

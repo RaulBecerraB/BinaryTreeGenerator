@@ -1,5 +1,8 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
+#Equipo 5
+#Integrantes:
+#Edwin Ulises Diaz Sanchez
+#Jose Raul Becerra Barcelo
+#Diego Felipe Ferrer Chacon
 
 from models.node import TreeNode
 
