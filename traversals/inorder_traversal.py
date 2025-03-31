@@ -1,4 +1,11 @@
-from interfaces.interfaces import ITreeTraversal
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+#Equipo 5
+#Integrantes:
+#Edwin Ulises Diaz Sanchez
+#Jose Raul Becerra Barcelo
+#Diego Felipe Ferrer Chacon
+
 from interfaces.interfaces import ITreeTraversal
 from utils.operator_utils import OperatorUtils
 
